@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main() {
+int main()
+{
     int c, nl, space, tab;
 
     nl = 0;
