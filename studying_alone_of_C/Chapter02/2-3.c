@@ -1,3 +1,5 @@
+/* 제어 문자를 사용한 출력 */
+
 #include <stdio.h>
 
 int main(void)
