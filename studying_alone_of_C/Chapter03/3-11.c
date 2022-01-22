@@ -1,3 +1,5 @@
+/* 문자와 문자열 입력 */
+
 #include <stdio.h>
 
 int main(void)

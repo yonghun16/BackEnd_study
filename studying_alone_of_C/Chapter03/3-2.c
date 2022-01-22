@@ -1,8 +1,9 @@
+/* char형 변수의 사용 */
+
 #include <stdio.h>
 
 int main(void)
 {
-    // char형 변수의 사용
     char ch1 = 'A';
     char ch2 = 65;
 

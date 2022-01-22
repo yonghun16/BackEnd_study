@@ -1,8 +1,9 @@
+/* const를 사용한 변수 */
+
 #include <stdio.h>
 
 int main(void)
 {
-    //const를 사용한 변수
     int income = 0;                 // 소득액 초기화
     double tax;                     // 세금
     const double tax_rate = 0.12;   // 세율 초기화

@@ -1,3 +1,5 @@
+/* scanf 함수를 사용한 연속 입력 */
+
 #include <stdio.h>
 
 int main(void)
