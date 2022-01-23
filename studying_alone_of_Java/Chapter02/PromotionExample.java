@@ -1,3 +1,5 @@
+/* 자동 타입 변환 */
+
 public class PromotionExample {
     public static void main(String[] args) {
         // 자동 타입 변환

@@ -1,3 +1,5 @@
+/* 변수값 교환 */
+
 public class VariableExchangeExample {
     public static void main(String[] args) {
         int x = 3;

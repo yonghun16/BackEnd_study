@@ -1,3 +1,5 @@
+/* 기본 타입과 문자열 간의 변환 */
+
 public class PrimitiveAndStringConversionExample {
     public static void main(String[] args) {
         int value1 = Integer.parseInt("10");

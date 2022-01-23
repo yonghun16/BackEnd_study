@@ -1,3 +1,5 @@
+/* 강제 타입 변환 */
+
 public class CastingExample {
     public static void main(String[] args) {
         int intValue = 44032;

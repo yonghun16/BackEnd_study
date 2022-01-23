@@ -1,3 +1,5 @@
+/* 정수 타입의 연산 */
+
 public class ByteOperationExample {
     public static void main(String[] args) {
         byte result1  = 10 + 20;

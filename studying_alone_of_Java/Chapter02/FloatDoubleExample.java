@@ -1,3 +1,5 @@
+/* float와 double 타입 */
+
 public class FloatDoubleExample {
     public static void main(String[] args) {
         // float var1 = 3.14;  <- 컴파일 에러

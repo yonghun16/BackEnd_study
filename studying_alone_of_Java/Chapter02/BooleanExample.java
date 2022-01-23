@@ -1,3 +1,5 @@
+/* boolean 타입 */
+
 public class BooleanExample {
     public static void main(String[] args) {
         boolean stop = true;

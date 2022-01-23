@@ -1,3 +1,5 @@
+/* 이스케이프 문자 출력 */
+
 public class EscapeExample {
     public static void main(String[] args) {
         System.out.println("번호\t이름\t직업");

@@ -1,3 +1,5 @@
+/* 키보드에서 입력된 내용을 문자열로 얻기 */
+
 import java.util.Scanner;
 
 public class ScannerExample {

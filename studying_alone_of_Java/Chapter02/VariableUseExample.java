@@ -1,3 +1,5 @@
+/* 변수 사용 */
+
 public class VariableUseExample {
     public static void main(String[] args) {
         int hour = 3;

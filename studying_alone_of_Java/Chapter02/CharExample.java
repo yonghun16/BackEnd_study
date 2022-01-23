@@ -1,3 +1,5 @@
+/* char 타입 */
+
 public class CharExample {
     public static void main(String[] args) {
         char c1 = 'A';       // 문자를 직접 저장

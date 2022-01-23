@@ -1,3 +1,5 @@
+/* 정수 리터럴 */
+
 public class IntegerLiteralExample {
     public static void main(String[] args) {
         int var1 = 0b1011;      // 2진수

@@ -1,3 +1,5 @@
+/* long 타입 변수 */
+
 public class LongExample {
     public static void main(String[] args) {
        long var1 = 20;
@@ -10,3 +12,4 @@ public class LongExample {
        System.out.println(var4);
     }
 }
+

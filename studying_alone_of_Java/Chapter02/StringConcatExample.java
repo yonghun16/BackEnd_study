@@ -1,3 +1,5 @@
+/* 문자열 결합 연산 */
+
 public class StringConcatExample {
     public static void main(String[] args) {
         int value = 10 + 2 + 8;

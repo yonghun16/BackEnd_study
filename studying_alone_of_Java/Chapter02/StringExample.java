@@ -1,3 +1,5 @@
+/* String 타입 */
+
 public class StringExample {
     public static void main(String[] args) {
         String name = "홍길동";
