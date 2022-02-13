@@ -32,3 +32,4 @@ struct vision exchage(struct vision robot)      // 구조체를 반환하는 함
 
     return robot;               // 구조체 변수 반환
 }
+
