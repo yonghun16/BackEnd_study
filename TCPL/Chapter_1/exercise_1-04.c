@@ -13,7 +13,7 @@ int main ()
 	celcius = lower;
 
 	while (celcius <= upper) {
-        fahr =  celcius * (9.0 / 5.0) + 32;
+        fahr =  celcius * (9.0 / 5.0) + 32;         // 섭씨를 화씨로 변환
         printf("%3.0f  %6.1f\n", celcius, fahr);
 	    celcius = celcius + step;
 	}
