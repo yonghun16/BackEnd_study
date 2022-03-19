@@ -1,3 +1,5 @@
+/* 문자열 결합 연산자 */
+
 public class StringConcatExample {
     public static void main(String[] args) {
         String str1 = "JDK" + 6.0;
