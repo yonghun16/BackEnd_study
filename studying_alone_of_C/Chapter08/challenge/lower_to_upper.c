@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 
     for(i=0; i<len; i++){
         if(string[i]>='A' && string[i]<='Z' ){
-            string[i] = string[i]-'A' + 'a';
+            string[i] -= ('A' + 'a');
             count++;
         }
     }
