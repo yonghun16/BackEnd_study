@@ -28,5 +28,7 @@ int main(void)
         fprintf(stdout, "%4s %5d %4d\n", p[i].name, p[i].score, p[i].rank);
     }
 
+    free(p);
+
     return 0;
 }
