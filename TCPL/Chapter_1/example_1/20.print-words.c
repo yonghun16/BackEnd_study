@@ -3,7 +3,7 @@
 #define IN	1
 #define OUT	0
 
-main()
+int main(void)
 {
 	int c, state;
 
@@ -20,4 +20,6 @@ main()
 			putchar(c);
 		}
 	}
+
+    return 0;
 }
