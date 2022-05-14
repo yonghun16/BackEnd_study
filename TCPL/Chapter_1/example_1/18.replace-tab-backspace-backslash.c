@@ -1,25 +1,25 @@
 #include <stdio.h>
 
-main()
+int main(void)
 {
-	int c;
+    int c;
 
-	while ((c = getchar()) != EOF) {
-		if (c == '\t') {
-			putchar('\\');
-			c = 't';
-		}
+    while ((c = getchar()) != EOF) {
+        if (c == '\t') {
+            putchar('\\');
+            c = 't';
+        }
+        if (c == '\b') {
+            putchar('\\');
+            c = 'b';
+        }
+        if (c == '\\') {
+            putchar('\\');
+            c = '\\';
+        }
 
-		if (c == '\b') {
-			putchar('\\');
-			c = 'b';
-		}
+        putchar(c);
+    }
 
-		if (c == '\\') {
-			putchar('\\');
-			c = '\\';
-		}
-
-		putchar(c);
-	}
+    return 0;
 }
