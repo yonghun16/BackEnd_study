@@ -2,9 +2,7 @@
 #include <stdio.h>
 #include <unistd.h>
 
-/* Using direct system calls instead of the standard library should be somewhat
- * faster. 
- */
+/* Using direct system calls instead of the standard library should be somewhat faster. */
 
 #define BUFSIZE	4096
 
