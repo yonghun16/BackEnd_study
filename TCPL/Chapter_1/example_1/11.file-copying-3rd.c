@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-main()
+int main(void)
 {
 	int c;
 
@@ -8,4 +8,6 @@ main()
 
 	printf("%d\n", c);
 	putchar(c);
+
+    return 0;
 }
