@@ -2,7 +2,8 @@
 
 /* print Fahrenheit-Celsius table for fahr = 0, 20, ..., 300 */
 
-int main(void) {
+int main(void)
+{
     int fahr, celsius;
     int lower, upper, step;
 
