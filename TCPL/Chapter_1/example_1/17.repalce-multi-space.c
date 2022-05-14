@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-main()
+int main(void)
 {
 	int c, pre;
 
@@ -10,4 +10,6 @@ main()
 		}
 		pre = c;
 	}
+
+    return 0;
 }

@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-main()
+int main(void)
 {
 	int c, nl;
 
@@ -9,4 +9,6 @@ main()
 		if (c == '\n')
 			++nl;
 	printf("%d\n", nl);
+
+    return 0;
 }
