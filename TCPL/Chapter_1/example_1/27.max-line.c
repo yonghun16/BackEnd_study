@@ -13,11 +13,12 @@ int main(void)
     char longest[MAXLINE];
 
     max = 0;
-    while ((len = myGetline(line, MAXLINE)) > 0)
+    while ((len = myGetline(line, MAXLINE)) > 0) {
         if (len > max) {
             max = len;
             copy(longest, line);
         }
+    }
 
     if (max > 0)
         printf("%s", longest);
@@ -36,6 +37,7 @@ int myGetline(char s[], int lim)
         ++i;
     }
     s[i] = '\0';
+
     return i;
 }
 
