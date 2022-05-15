@@ -1,25 +1,27 @@
 #include <stdio.h>
 
-main()
+int main(void)
 {
-	int c, n, i;
-	int cur;
+    int c, n, i;
+    int cur;
 
-	n = 8;
+    n = 8;
 
-	cur = 0;
+    cur = 0;
 
-	while ((c = getchar()) != EOF) {
-		if (c == '\t') {
-			for (i = n - cur; i > 0; --i)
-				putchar(' ');
+    while ((c = getchar()) != EOF) {
+        if (c == '\t') {
+            for (i = n - cur; i > 0; --i)
+                putchar(' ');
+            cur = 0;
+        } 
+        else {
+            putchar(c);
+            cur++;
+            if (cur > n)
+                cur = 0;
+        }
+    }
 
-			cur = 0;
-		} else {
-			putchar(c);
-			cur++;
-			if (cur > n)
-				cur = 0;
-		}
-	}
+    return 0;
 }

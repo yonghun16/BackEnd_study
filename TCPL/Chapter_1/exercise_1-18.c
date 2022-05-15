@@ -5,7 +5,6 @@
 int	get_line (char line[], int limit);
 
 int main (void)
-
 {
     int	len;
     char line[MAXLINE];
@@ -27,7 +26,6 @@ int main (void)
 }
 
 int get_line (char line[], int limit)
-
 {
     int	i, c;
 
