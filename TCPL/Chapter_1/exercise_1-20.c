@@ -2,7 +2,7 @@
 
 void detab (int n);
 
-int main()
+int main(void)
 {
     detab(4);
 
@@ -14,7 +14,7 @@ void detab (int n)
     int	column, c;
 
     column = 0;
-    while((c = getchar()) != EOF)
+    while((c = getchar()) != EOF) {
         if(c == '\t')
             do {
                 putchar('@');
@@ -24,4 +24,5 @@ void detab (int n)
             putchar(c);
             column = 0;
         }
+    }
 }

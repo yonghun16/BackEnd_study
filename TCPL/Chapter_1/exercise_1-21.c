@@ -2,7 +2,7 @@
 
 void entab (int n);
 
-int main () 
+int main (void) 
 {
     entab(4);
 
