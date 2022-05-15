@@ -2,7 +2,7 @@
 
 float celcius(float fahr);
 
-int main()
+int main(void)
 {
     float fahr;
     int	lower, upper, step;

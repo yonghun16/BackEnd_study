@@ -20,9 +20,10 @@ int main (void)
     while ((c = getchar()) != EOF) {
         if (c >= 'a' && c <= 'z')
             c = 'A' + c - 'a';
-        if (c >= 'A' && c <= 'Z')
+        if (c >= 'A' && c <= 'Z') {
             if (++counts[c - 'A'] > max)
                 max = counts[c - 'A'];
+        }
     }
 
     for (i = 0; i < ALPHABET_SIZE; i++) {

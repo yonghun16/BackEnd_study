@@ -1,20 +1,20 @@
 #include <stdio.h>
+
 #define MAXLINE 1000    /* maximum input line size */
 #define DISPLAY_LINE 80
 
 int get_line(char line[], int maxline);
 
 /* print longest input line */
-int main()
+int main(void)
 {
-    int len;        /* current line length */
-    int max;        /* maximum length seen so far */
+    int len;                /* current line length */
     char line[MAXLINE];     /* current input line */
 
-    max = 0;
-    while((len = get_line(line, MAXLINE)) > 0)
+    while((len = get_line(line, MAXLINE)) > 0) {
         if(len >= DISPLAY_LINE)
             printf("%s = %d\n", line, len);
+    }
 
     return 0;
 }
@@ -26,6 +26,7 @@ int get_line(char s[], int lim)
 
     for(i = 0; i < lim-1 && (c=getchar()) != EOF && c != '\n'; ++i)
         s[i] = c;
+
     s[i] = '\0';
 
     return i;

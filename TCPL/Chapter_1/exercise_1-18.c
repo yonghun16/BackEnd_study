@@ -1,9 +1,10 @@
 #include <stdio.h>
+
 #define MAXLINE	1000
 
 int	get_line (char line[], int limit);
 
-int main ()
+int main (void)
 
 {
     int	len;
@@ -13,16 +14,13 @@ int main ()
         len = len - 2;
         if (len >= 0 && line[len] == '\n')
             len--;
-
         while (len >= 0 && (line[len] == ' ' || line[len] == '\t'))
             len--;
-
         if (len >= 0) {
             line[len + 1] = '\n';
             line[len + 2] = '\0';
             printf("%s", line);
         }
-
     }
 
     return 0;
@@ -35,11 +33,9 @@ int get_line (char line[], int limit)
 
     for (i = 0; i < limit - 1 && (c = getchar()) != EOF && c != '\n'; i++)
         line[i] = c;
-
     if (c == '\n') {
         line[i] = c;
         i++;
-
     }
     line[i] = '\0';
 
