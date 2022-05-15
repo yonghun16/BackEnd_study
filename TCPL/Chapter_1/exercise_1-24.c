@@ -9,7 +9,7 @@ int	line;
 
 void print_error (char s[]);
 
-int main ()
+int main (void)
 {
     int state, 
         parentheses, brackets, braces, 

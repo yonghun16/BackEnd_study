@@ -5,7 +5,7 @@
 #define DOUBLE_QUOTE    2
 #define SINGLE_QUOTE    3
 
-int main ()
+int main (void)
 {
     int state, c, d;
 

@@ -5,7 +5,7 @@
 void fold (int tab_size);
 void print_buffer (char buffer[], int length);
 
-int main()
+int main(void)
 {
     fold(8);
 
@@ -18,7 +18,8 @@ void fold (int tab_size)
     char buffer[FOLDING_LENGTH];
 
     column = non_blanks = 0;
-    while ((c = getchar()) != EOF)
+
+    while ((c = getchar()) != EOF) {
         if (c == ' ' || c == '\t') {
             if (column + non_blanks < FOLDING_LENGTH) {
                 print_buffer(buffer, non_blanks);
@@ -58,15 +59,15 @@ void fold (int tab_size)
 
             print_buffer(buffer, FOLDING_LENGTH);
 
-            do 
+            do {
                 putchar(c);
-
-            while ((c = getchar()) != EOF 
+            } while ((c = getchar()) != EOF 
                     && c != ' ' && c != '\t' && c != '\n');
 
             putchar('\n');
             column = non_blanks = 0;
         }
+    }
 }
 
 void print_buffer (char buffer[], int length)
