@@ -5,7 +5,7 @@
 #define ALPHABET_SIZE	26
 #define HISTOGRAM_SIZE	40
 
-int main ()
+int main (void)
 {
     int	i, counts[ALPHABET_SIZE], max, c;
 
