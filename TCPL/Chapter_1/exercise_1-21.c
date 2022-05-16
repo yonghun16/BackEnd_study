@@ -26,13 +26,6 @@ void entab(int n)
                 int	t;
                 t = n - column % n;
 
-                /* If either a tab or a single blank can be
-                 * be used to reach a tab stop, a blank is
-                 * used because this would make the output
-                 * more robust if read with a different tab
-                 * size.
-                 */
-
                 if (t <= blanks && t != 1) {
                     column = column + t;
                     putchar('\t');

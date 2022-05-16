@@ -1,7 +1,9 @@
 #include <ctype.h>
 #include <stdio.h>
 
-main()
+int atoi(char s[]);
+
+int main(void)
 {
 	printf("%d\n", atoi("123"));
 	printf("%d\n", atoi("+1"));
@@ -9,23 +11,25 @@ main()
 	printf("%d\n", atoi("-123"));
 	printf("%d\n", atoi("asd345"));
 	printf("%d\n", atoi("789asd345"));
+
+    return 0;
 }
 
 int atoi(char s[])
 {
-	int i, n, sign;
+    int i, n, sign;
 
-	for (i = 0; isspace(s[i]); i++)
-		;
+    for (i = 0; isspace(s[i]); i++)
+        ;
 
-	sign = (s[i] == '-') ? -1 : 1;
+    sign = (s[i] == '-') ? -1 : 1;
 
-	if (s[i] == '+' || s[i] == '-')
-		i++;
+    if (s[i] == '+' || s[i] == '-')
+        i++;
 
-	for (n = 0; isdigit(s[i]); i++)
-		n = 10 * n + (s[i] - '0');
-	
-	return sign * n;
+    for (n = 0; isdigit(s[i]); i++)
+        n = 10 * n + (s[i] - '0');
+
+    return sign * n;
 }
 
