@@ -1,3 +1,5 @@
+/* 배열의 length 필드 */
+
 public class ArrayLengthExample {
     public static void main(String[] args) {
         int[] scores = { 83, 90, 87 };
