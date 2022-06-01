@@ -25,4 +25,3 @@ public class CarThis {
         this.maxSpeed = maxSpeed;
     }
 }
-
