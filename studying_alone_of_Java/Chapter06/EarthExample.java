@@ -6,3 +6,4 @@ public class EarthExample {
         System.out.println("지구의 표면적: " + Earth.EARTH_AREA + " km^2");
     }
 }
+
