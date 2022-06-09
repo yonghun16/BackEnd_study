@@ -1,4 +1,4 @@
-/* 구현 클래스 */
+/* 구현 클래스 Bus2 */
 
 public class Bus2 implements Vehicle2 {
     @Override
