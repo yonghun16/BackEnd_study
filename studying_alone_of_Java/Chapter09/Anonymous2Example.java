@@ -11,7 +11,7 @@ public class Anonymous2Example {
         anony2.method2(new RemoteControl() {
             @Override
             public void turnOn() {
-                System.out.println("smartTV를 켭니다.");
+               System.out.println("smartTV를 켭니다.");
             }
             @Override
             public void turnOff() {
@@ -19,4 +19,4 @@ public class Anonymous2Example {
             }
         });
     }
-}
+} 
