@@ -8,6 +8,6 @@ public class ButtonExample {
         btn.touch();
 
         btn.setOnClickListener(new MessageListener());
-        btn.touch();
+        btn.touch(); 
     }
 }
