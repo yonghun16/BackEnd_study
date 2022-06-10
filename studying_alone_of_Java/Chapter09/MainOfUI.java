@@ -5,5 +5,5 @@ public class MainOfUI {
         Window w = new Window();
         w.button1.touch();  //버튼 클릭
         w.button2.touch();
-    } 
+    }
 }
