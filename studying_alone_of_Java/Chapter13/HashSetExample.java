@@ -28,7 +28,7 @@ public class HashSetExample {
         System.out.println("총 객체수: " + set.size());  //저장된 객체 수 얻기
 
         iterator = set.iterator();    //반복자 얻기
-        for(String element: set) {
+        for(String element: set) {    //객체 수만큼 루핑
             System.out.println("\t" + element);
         }
 
