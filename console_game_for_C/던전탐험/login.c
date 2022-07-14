@@ -5,10 +5,11 @@ void showLoginBar();
 void showMenu();
 void loginEnter();
 void passwdChangeEnter();
-void gameExit();
+int gameExit();
 
-void login()
+int login()
 {
+    int state = 1;
     char menuNumber[10];
 
     showLoginBar();
@@ -27,10 +28,14 @@ void login()
         switch (menuNumberToInt) {
             case 1: loginEnter(); break;
             case 2: passwdChangeEnter(); break;
-            case 3: gameExit(); break;
+            case 3: state = gameExit(); break;
             default: printf("\n*** 잘못 누르셨습니다. 다시 입력해 주세요. ***\n"); continue;
         }
+
+        if (!state) break;
     }
+
+    return state;
 }
 
 void showLoginBar()
@@ -52,7 +57,7 @@ void loginEnter() {
     char passwd[20];
     printf("\nID : ");
     scanf("%s", id);
-    printf("\nPASSWORD : ");
+    printf("PASSWORD : ");
     scanf("%s", passwd);
 }
 
@@ -61,7 +66,9 @@ void passwdChangeEnter()
     printf("\n패스워드 변경 화면\n");
 }
 
-void gameExit()
+int gameExit()
 {
-    printf("\n게임 종료\n");
+    printf("\n게임을 종료 합니다.\n");
+
+    return 0;
 }

@@ -2,13 +2,20 @@
 #include <stdlib.h>
 #include <time.h>
 
-void login();
+int login();
 void intro();
 
 int main() 
 {
+    int state = 0;
     intro(); 
-    login();
+    state = login();
 
-    return 0;
+    if(state) {
+
+    }
+    else {
+        return 0;
+    }
+
 }
