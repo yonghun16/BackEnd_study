@@ -9,39 +9,28 @@ void gameExit();
 
 void login()
 {
-    char id[10];
     char menuNumber[10];
 
     showLoginBar();
     
     while(1) {
+        int menuNumberToInt = 0;
         showMenu();
         scanf("%s", menuNumber); 
 
         if(menuNumber[1]) {
             menuNumber[0] = 0;
+        } else {
+            menuNumberToInt = (int)menuNumber[0]-48;
         }
 
-        if((int)menuNumber[0]-48 == 1) {        // 로그인
-            loginEnter();
-            break;
-        }
-        else if((int)menuNumber[0]-48 == 2) {   // 패스워드 변경
-            passwdChangeEnter();
-            break;
-        }
-        else if((int)menuNumber[0]-48 == 3) {  // 종료
-            gameExit();
-            break;
-        }
-        else {
-            printf("\n*** 잘못 누르셨습니다. 다시 입력해 주세요. ***\n");
-            continue;
+        switch (menuNumberToInt) {
+            case 1: loginEnter(); break;
+            case 2: passwdChangeEnter(); break;
+            case 3: gameExit(); break;
+            default: printf("\n*** 잘못 누르셨습니다. 다시 입력해 주세요. ***\n"); continue;
         }
     }
-
-    showLoginBar();
-
 }
 
 void showLoginBar()
@@ -59,7 +48,12 @@ void showMenu()
 }
 
 void loginEnter() {
-    printf("\n로그인 화면\n");
+    char id[10];
+    char passwd[20];
+    printf("\nID : ");
+    scanf("%s", id);
+    printf("\nPASSWORD : ");
+    scanf("%s", passwd);
 }
 
 void passwdChangeEnter()

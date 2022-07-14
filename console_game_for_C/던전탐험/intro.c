@@ -6,7 +6,7 @@ void intro()
     FILE *fp;
     char ch;
 
-    fp = fopen("intro_pic.txt", "r");
+    fp = fopen("data/intro_pic.txt", "r");
     if (fp == NULL) {
         printf("파일이 열리지 않았습니다. \n");
     }
